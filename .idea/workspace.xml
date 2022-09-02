@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f81ededf-13ff-4994-9ada-534de8276d64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POO_2022.iml" afterDir="false" />
+    <list default="true" id="f81ededf-13ff-4994-9ada-534de8276d64" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/src/com/agenda/UML_agenda.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dispensador/UML_dispensador.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/agenda/dominio/Agenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/agenda/dominio/Agenda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dispensador/App/AppDispensador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dispensador/App/AppDispensador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dispensador/dominio/Dispensador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dispensador/dominio/Dispensador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dispensador/dominio/Mekato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dispensador/dominio/Mekato.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,14 +35,14 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/User/Desktop/POO_2022"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/Uni/4 Cuarto/POO/POO_2022&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.AppDispensador">
+}</component>
+  <component name="RunManager" selected="Application.AppAgenda">
     <configuration name="AppAgenda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.agenda.App.AppAgenda" />
       <module name="POO_2022" />
@@ -70,8 +71,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AppDispensador" />
         <item itemvalue="Application.AppAgenda" />
+        <item itemvalue="Application.AppDispensador" />
       </list>
     </recent_temporary>
   </component>
@@ -96,5 +97,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

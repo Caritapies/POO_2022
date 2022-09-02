@@ -1,22 +1,25 @@
 package com.dispensador.dominio;
 
+import com.agenda.dominio.Contacto;
+
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 
 public class Dispensador {
     List<Mekato> mekato = new ArrayList<>();
-    private final static int LIMITE_SNACK = 12;
+    private final static int LIMITE_SNACK = 12,LIMITE_UNIDAD = 6;
 
-    public boolean agregarSnack(String nombre){
-        Mekato snack = new Mekato(nombre,this.mekato.size() + 1);
+    public boolean agregarSnack(String nombre,int valor){
+        Mekato snack = new Mekato(nombre,this.mekato.size() + 1,valor);
         for(Mekato i: mekato){
-            if((i.getNombre().equals(nombre)) || mekato.size() > LIMITE_SNACK) {
+            if((i.getNombre().equals(nombre)) || mekato.size() > LIMITE_SNACK || i.getCantidad() > LIMITE_UNIDAD) {
                 return false;
             }
         }
         this.mekato.add(snack);
-        snack.setCantidad(1);
+        snack.setCantidad(LIMITE_UNIDAD);
         return true;
 
     }
@@ -60,44 +63,56 @@ public class Dispensador {
         }
         return false;
     }
-    public int obtenerCantidadSnack(Mekato snack){
+    public int obtenerCantidadSnack(String nombre){
 
-        if(mekato.contains(snack)){
-            return snack.getCantidad();
+        for(Mekato i: mekato){
+            if(i.getNombre().equals(nombre)){
+                return i.getCantidad();
+            }
         }
         return 0;
     }
-    public List<Mekato> obtenerNombreAgotados(){
-        List<Mekato> agotados = new ArrayList<>();
+    public List<String> obtenerNombreAgotados(){
+        List<String> agotados = new ArrayList<>();
         for(Mekato i: mekato){
             if(i.getCantidad() == 0){
-                agotados.add(i);
+                agotados.add(i.getNombre());
             }
         }
         return agotados;
     }
-    public List<Mekato> obtenerNombreActivos(){
+    public List<String> obtenerNombreActivos(){
 
-        List<Mekato> activos = new ArrayList<>();
+        List<String> activos = new ArrayList<>();
         for(Mekato i: mekato){
             if(i.getCantidad() != 0){
-                activos.add(i);
+                activos.add(i.getNombre());
             }
         }
         return activos;
 
     }
-    public void ordenSnackValorMayor(){
-
-
-
-
+    public List<Mekato> obtenerValorMayorAMenor() {
+        List<Mekato> ordenada = mekato;
+        ordenada.sort(Comparator.comparing(Mekato::getValor).reversed());
+        return ordenada;
     }
-    public void ordenSnackValorMenor(){
 
+    public List<Mekato> obtenerCantidadMenorAMayor() {
+        List<Mekato> ordenada = mekato;
+        ordenada.sort(Comparator.comparing(Mekato::getCantidad));
+        return ordenada;
     }
-    public boolean validarExistenciaSnack(Mekato snack){
-        return mekato.contains(snack);
+    public boolean validarExistenciaSnack(String nombre){
+        for(Mekato i: mekato){
+            if(i.getNombre().equals(nombre) && i.getCantidad() > 0){
+                return true;
+            }
+        }
+        return false;
+
     }
 }
+
+
 

@@ -41,7 +41,6 @@ public class Agenda {
         }
         public Contacto buscarContactoPorTelefono(long telefono){
             Contacto contactoBuscado = this.contactos.stream().filter(contacto -> contacto.getTelefono() == telefono).findFirst().orElse(null);
-            System.out.println(contactoBuscado.getNombre()+", "+contactoBuscado.getApellido()+", "+contactoBuscado.getTelefono());
             return contactoBuscado;
         }
         public void cambiarTelefono(long numeroAntiguo,long numeroNuevo){
