@@ -9,7 +9,7 @@ public class Agenda {
         public List<Contacto> contactos = new ArrayList<>();
 
         public boolean crearContacto(String nombre,String apellido,long numero){
-            if(this.contactos.size() < LIMITE_AGENDA) {
+            if(this.contactos.size() < LIMITE_AGENDA && buscarContactoPorTelefono(numero) == null) {
                 this.contactos.add(new Contacto(nombre, apellido, numero));
                 return true;
 
@@ -50,7 +50,8 @@ public class Agenda {
         }
         public void ordenarAlfabeticamente(){
             this.contactos.sort(Comparator.comparing(Contacto::getNombre).thenComparing(Contacto::getApellido))  ;
-            System.out.print("Se ha ordenado la agenda en orden alfabetico.");
+            System.out.println("Se ha ordenado la agenda en orden alfabetico.");
+            mostrarLista(contactos);
 
         }
         public void mostrarLista(List<Contacto> lista){

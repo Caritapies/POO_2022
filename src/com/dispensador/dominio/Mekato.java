@@ -6,10 +6,11 @@ public class Mekato {
     private int cantidad;
     private int valor;
 
-    public Mekato(String nombre, int codigo,int valor) {
+    public Mekato(String nombre,int codigo,int valor) {
         this.nombre = nombre;
         this.codigo = codigo;
         this.cantidad = 0;
+        this.valor = valor;
     }
 
     public String getNombre() {

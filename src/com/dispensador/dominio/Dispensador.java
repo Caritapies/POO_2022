@@ -20,6 +20,7 @@ public class Dispensador {
         }
         this.mekato.add(snack);
         snack.setCantidad(LIMITE_UNIDAD);
+        mostrarLista(this.mekato);
         return true;
 
     }
@@ -28,6 +29,7 @@ public class Dispensador {
 
             if(i.getCodigo() == codigo && i.getCantidad() != 0){
                 i.setCantidad(i.getCantidad() - 1);
+                mostrarLista(this.mekato);
                 return true;
             }
         }
@@ -40,6 +42,7 @@ public class Dispensador {
             if(i.getNombre().equals(nombre) && i.getCantidad() != 0){
 
                 i.setCantidad(i.getCantidad() - 1);
+                mostrarLista(this.mekato);
                 return true;
             }
         }
@@ -47,8 +50,9 @@ public class Dispensador {
     }
     public boolean aumentarCantidad(String nombre){
         for(Mekato i: mekato){
-            if(i.getNombre().equals(nombre) && i.getCantidad() < 6){
+            if(i.getNombre().equals(nombre) && i.getCantidad() < LIMITE_UNIDAD){
                 i.setCantidad(i.getCantidad()+1);
+                mostrarLista(this.mekato);
                 return true;
             }
         }
@@ -58,6 +62,7 @@ public class Dispensador {
         for(Mekato i: mekato){
             if(i.getNombre().equals(nombre) && i.getCantidad() > 0){
                 mekato.remove(i);
+                mostrarLista(this.mekato);
                 return true;
             }
         }
@@ -67,6 +72,7 @@ public class Dispensador {
 
         for(Mekato i: mekato){
             if(i.getNombre().equals(nombre)){
+                System.out.println(i.getCantidad());
                 return i.getCantidad();
             }
         }
@@ -79,6 +85,7 @@ public class Dispensador {
                 agotados.add(i.getNombre());
             }
         }
+        mostrarListaString(agotados);
         return agotados;
     }
     public List<String> obtenerNombreActivos(){
@@ -89,18 +96,21 @@ public class Dispensador {
                 activos.add(i.getNombre());
             }
         }
+        mostrarListaString(activos);
         return activos;
 
     }
     public List<Mekato> obtenerValorMayorAMenor() {
         List<Mekato> ordenada = mekato;
         ordenada.sort(Comparator.comparing(Mekato::getValor).reversed());
+        mostrarLista(ordenada);
         return ordenada;
     }
 
     public List<Mekato> obtenerCantidadMenorAMayor() {
         List<Mekato> ordenada = mekato;
         ordenada.sort(Comparator.comparing(Mekato::getCantidad));
+        mostrarLista(ordenada);
         return ordenada;
     }
     public boolean validarExistenciaSnack(String nombre){
@@ -111,6 +121,21 @@ public class Dispensador {
         }
         return false;
 
+    }
+    public void mostrarLista(List<Mekato> lista){
+        for(Mekato snack: lista){
+            System.out.println(snack.getNombre()+", cantidad: "+snack.getCantidad()+", codigo: "+snack.getCodigo()+
+                    ", valor: "+snack.getValor());
+        }
+    }
+    public void mostrarListaString(List<String> lista){
+        for(String snack: lista){
+            System.out.println(snack);
+        }
+    }
+
+    public List<Mekato> getMekato() {
+        return mekato;
     }
 }
 
