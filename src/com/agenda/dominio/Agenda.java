@@ -3,6 +3,9 @@ package com.agenda.dominio;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Locale;
+import java.util.stream.Collectors;
+
 public class Agenda {
 
         private static final int LIMITE_AGENDA = 50;
@@ -20,33 +23,22 @@ public class Agenda {
             contactos.remove(buscarContactoPorTelefono(numero));
         }
         public List<Contacto> buscarContactoPorNombre(String nombre){
-            List<Contacto> nombres = new ArrayList<>();
-            for(Contacto i: contactos){
-                if(i.getNombre().equals(nombre)){
-                    nombres.add(i);
-                }
-            }
-            mostrarLista(nombres);
-            return nombres;
+            return this.contactos.stream().filter(c -> c.getNombre().toLowerCase().startsWith(nombre.toLowerCase()))
+                    .collect(Collectors.toList());
         }
         public List<Contacto> buscarContactoPorApellido(String apellido){
-            List<Contacto> apellidos = new ArrayList<>();
-            for(Contacto i: contactos){
-                if(i.getApellido().equals(apellido)){
-                    apellidos.add(i);
-                }
-            }
-            mostrarLista(apellidos);
-            return apellidos;
+            return this.contactos.stream().filter(c -> c.getApellido().toLowerCase().startsWith(apellido.toLowerCase()))
+                    .collect(Collectors.toList());
         }
         public Contacto buscarContactoPorTelefono(long telefono){
             Contacto contactoBuscado = this.contactos.stream().filter(contacto -> contacto.getTelefono() == telefono).findFirst().orElse(null);
             return contactoBuscado;
         }
-        public void cambiarTelefono(long numeroAntiguo,long numeroNuevo){
+        public boolean cambiarTelefono(long numeroAntiguo,long numeroNuevo){
             if(numeroAntiguo == (buscarContactoPorTelefono(numeroAntiguo).getTelefono())){
                 buscarContactoPorTelefono(numeroAntiguo).setTelefono(numeroNuevo);
             }
+            return false;
         }
         public void ordenarAlfabeticamente(){
             this.contactos.sort(Comparator.comparing(Contacto::getNombre).thenComparing(Contacto::getApellido))  ;
