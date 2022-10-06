@@ -33,7 +33,8 @@ public class Guayabita {
     }
 
     public boolean iniciarJuego(Jugador jugador1, Jugador jugador2){
-        if(jugador1.getDinerro() >= caceMinimo && jugador2.getDinerro() >= caceMinimo){
+        if((jugador1.getDinerro() >= caceMinimo && jugador2.getDinerro() >= caceMinimo) && (jugador1.getDinerro()-caceMinimo > 0 && jugador2.getDinerro()-caceMinimo > 0)){
+
             jugador1.setDinerro(jugador1.getDinerro() - caceMinimo);
             jugador2.setDinerro(jugador2.getDinerro() - caceMinimo);
             this.pote += 2*caceMinimo;
