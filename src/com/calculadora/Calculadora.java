@@ -1,4 +1,4 @@
-package com.calculadora.dominio;
+package com.calculadora;
 
 import java.awt.*;
 import javax.swing.*;

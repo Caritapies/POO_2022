@@ -1,21 +1,25 @@
-package com.calculadora.App;
-
-import com.calculadora.dominio.Calculadora;
+package com.calculadora;
 
 import javax.swing.*;
-import java.util.Objects;
 import java.lang.Math;
 
 public class AppCalculadora {
+    private static final ImageIcon ICONO = new ImageIcon(AppCalculadora.class.getResource("calculator.png"));
+    private static final ImageIcon SUMAR = new ImageIcon(AppCalculadora.class.getResource("add.png"));
+    private static final ImageIcon RESTAR = new ImageIcon(AppCalculadora.class.getResource("Substract.png"));
+    private static final ImageIcon MULTIPLICAR = new ImageIcon(AppCalculadora.class.getResource("multiply.png"));
+    private static final ImageIcon DIVIDIR = new ImageIcon(AppCalculadora.class.getResource("divide.png"));
 
     public static void main(String[] args) {
+
+
         int eleccion;
         float numero1,numero2,resultado;
         JCheckBox checkbox = new JCheckBox("Redondear");
         boolean continuar = true;
         while(continuar){
 
-            eleccion = JOptionPane.showOptionDialog(null,"alo","Calculadora",JOptionPane.DEFAULT_OPTION,JOptionPane.INFORMATION_MESSAGE,null, new Object[] {"Sumar", "Restar", "Multiplicar", "Dividir",checkbox},"Sumar");
+            eleccion = JOptionPane.showOptionDialog(null,"","Calculadora",JOptionPane.DEFAULT_OPTION,JOptionPane.INFORMATION_MESSAGE,ICONO, new Object[] {SUMAR, RESTAR, MULTIPLICAR, DIVIDIR,checkbox},"");
             switch (eleccion){
                 case Calculadora.SUMAR -> {
                     numero1 = Float.parseFloat(JOptionPane.showInputDialog("Numero 1"));
