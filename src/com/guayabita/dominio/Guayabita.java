@@ -1,13 +1,13 @@
 package com.guayabita.dominio;
-import java.lang.Math;
 
 public class Guayabita {
     private int pote;
-    private int caceMinimo;
+    private final int caceMinimo;
     public static final int JUGAR = 0;
     public static final int INSTRUCCIONES = 1;
 
     public static String getInstrucciones() {
+
         return """
                 1. Posee dos jugadores, cada uno empieza con una determinada suma de dinero.
                  

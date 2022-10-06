@@ -93,6 +93,7 @@ public class AppGuayabita {
                 if (salida == JOptionPane.YES_OPTION) {
                     do{
                         apuesta = Integer.parseInt(JOptionPane.showInputDialog(jugador.getNombre()+", ¿Cuánto quieres apostar?\n tu dinero es: "+jugador.getDinerro()));
+
                         if(juegoGuayabita.apostar(apuesta,jugador)){
                             apuestaValida = true;
                             tiro2 = jugador.tirarDado();
