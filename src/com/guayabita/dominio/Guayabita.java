@@ -40,6 +40,7 @@ public class Guayabita {
             this.pote += 2*caceMinimo;
             return true;
         }
+        darDineroGanador(jugador1,jugador2);
         return false;
     }
     public boolean apostar(int cantidadApostada,Jugador jugador){
@@ -54,6 +55,13 @@ public class Guayabita {
     public void ganar(Jugador jugador,int cantidadApostada){
         jugador.setDinerro(jugador.getDinerro() + 2*cantidadApostada);
         this.pote -= 2*cantidadApostada;
+    }
+    public void darDineroGanador(Jugador jugador1,Jugador jugador2){
+        if(jugador1.getDinerro() > jugador2.getDinerro()){
+            jugador1.setDinerro(jugador1.getDinerro() + pote );
+        }else{
+            jugador2.setDinerro(jugador2.getDinerro() + pote);
+        }
     }
     public int getPote() {
         return pote;

@@ -4,6 +4,8 @@ import com.guayabita.dominio.Guayabita;
 import com.guayabita.dominio.Jugador;
 
 import javax.swing.*;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
 
 public class AppGuayabita {
@@ -15,6 +17,7 @@ public class AppGuayabita {
     private static final ImageIcon DADO_4 = new ImageIcon(Objects.requireNonNull(AppGuayabita.class.getResource("dado4.png")));
     private static final ImageIcon DADO_5 = new ImageIcon(Objects.requireNonNull(AppGuayabita.class.getResource("dado5.png")));
     private static final ImageIcon DADO_6 = new ImageIcon(Objects.requireNonNull(AppGuayabita.class.getResource("dado6.png")));
+    static List<ImageIcon> dados = Arrays.asList(DADO_1, DADO_2, DADO_3, DADO_4, DADO_5, DADO_6);
 
     public static void main(String[] args) {
         int eleccion = 0,pote,dinero;
@@ -46,6 +49,7 @@ public class AppGuayabita {
                         mostrarMensaje("Poniendo cace...",ICONO);
                         mostrarMensaje("El valor del pote actualmente es : " + juegoGuayabita.getPote()+"\n"+jugador1.getNombre()+": "+jugador1.getDinerro()+"\n"+jugador2.getNombre()+": "+jugador2.getDinerro(), ICONO);
                         mostrarMensaje("Turno de " + jugador1.getNombre(), ICONO);
+
                         if (!jugarYGanar(jugador1, juegoGuayabita)) {
 
                             mostrarMensaje("Turno de " + jugador2.getNombre(), ICONO);
@@ -59,7 +63,6 @@ public class AppGuayabita {
 
             }
         }
-
 
     }
     public static void mostrarMensaje(String mensaje, ImageIcon icon){
@@ -82,30 +85,16 @@ public class AppGuayabita {
             } else if (tiro1 == 6) {
                 mostrarMensaje("Cediendo turno", DADO_6);
             } else {
-                switch (tiro1) {
-                    case 2 -> salida = mostrarDado(DADO_2, jugador, juegoGuayabita);
-                    case 3 -> salida = mostrarDado(DADO_3, jugador, juegoGuayabita);
-                    case 4 -> salida = mostrarDado(DADO_4, jugador, juegoGuayabita);
-                    case 5 -> salida = mostrarDado(DADO_5, jugador, juegoGuayabita);
-                    default -> salida = -1;
-                }
+                salida = mostrarDado(AppGuayabita.dados.get(tiro1-1),jugador,juegoGuayabita);
 
                 if (salida == JOptionPane.YES_OPTION) {
                     do{
-                        apuesta = Integer.parseInt(JOptionPane.showInputDialog(jugador.getNombre()+", ¿Cuánto quieres apostar?\n tu dinero es: "+jugador.getDinerro()));
+                        apuesta = Integer.parseInt(JOptionPane.showInputDialog(jugador.getNombre()+", ¿Cuánto quieres apostar?\n tu dinero es: "+jugador.getDinerro()+"\nY el dinero del pote es: "+juegoGuayabita.getPote()));
 
                         if(juegoGuayabita.apostar(apuesta,jugador)){
                             apuestaValida = true;
                             tiro2 = jugador.tirarDado();
-                            switch (tiro2) {
-                                case 1 -> mostrarMensaje("", DADO_1);
-                                case 2 -> mostrarMensaje("", DADO_2);
-                                case 3 -> mostrarMensaje("", DADO_3);
-                                case 4 -> mostrarMensaje("", DADO_4);
-                                case 5 -> mostrarMensaje("", DADO_5);
-                                case 6 -> mostrarMensaje("", DADO_6);
-
-                            }
+                            mostrarMensaje(jugador.getNombre()+" este es tu tiro",dados.get(tiro2-1));
                             if (tiro2 > tiro1) {
                                 juegoGuayabita.ganar(jugador,apuesta);
                                 mostrarMensaje("Has ganado la apuesta!", PERSONA);

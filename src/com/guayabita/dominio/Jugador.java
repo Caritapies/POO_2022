@@ -1,7 +1,7 @@
 package com.guayabita.dominio;
 
 public class Jugador {
-    private String nombre;
+    private final String nombre;
     private int dinerro;
 
     public Jugador(String nombre, int dinerro) {

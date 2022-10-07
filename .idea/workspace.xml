@@ -2,32 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f81ededf-13ff-4994-9ada-534de8276d64" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/com/Poligonos/App/AppPoligono.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Poligonos/dominio/Circulo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Poligonos/dominio/Cuadrado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Poligonos/dominio/FiguraGeometrica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Poligonos/dominio/Triangulo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/calculadora/Substract.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/calculadora/add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/calculadora/calculator.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/calculadora/divide.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/calculadora/multiply.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/guayabita/App/dado1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/guayabita/App/dado2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/guayabita/App/dado3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/guayabita/App/dado4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/guayabita/App/dado5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/guayabita/App/dado6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/guayabita/App/guayaba.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/guayabita/App/person.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/guayabita/dominio/Jugador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/calculadora/App/AppCalculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/calculadora/AppCalculadora.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/calculadora/dominio/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/calculadora/Calculadora.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/calculadora/dominio/uco.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/guayabita/App/AppGuayabita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guayabita/App/AppGuayabita.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/guayabita/dominio/Guayabita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guayabita/dominio/Guayabita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guayabita/dominio/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/guayabita/dominio/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guayabita/dominio/Jugador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,14 +34,14 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/User/Desktop/Uni/4 Cuarto/POO/POO_2022/src/com/guayabita/App",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/Uni/4 Cuarto/POO/POO_2022/src/com/guayabita/App&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\Uni\4 Cuarto\POO\POO_2022\src\com\guayabita\App" />
@@ -180,7 +158,28 @@
       <option name="project" value="LOCAL" />
       <updated>1664733539477</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=".">
+      <created>1665077335309</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665077335309</updated>
+    </task>
+    <task id="LOCAL-00005" summary=".">
+      <created>1665083387292</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665083387292</updated>
+    </task>
+    <task id="LOCAL-00006" summary=".">
+      <created>1665084086902</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665084086902</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
