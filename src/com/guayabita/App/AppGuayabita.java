@@ -38,6 +38,7 @@ public class AppGuayabita {
                 dinero = Integer.parseInt((String) JOptionPane.showInputDialog(null, "Ingresa el dinero total del primer jugador", "Jugador 1", JOptionPane.PLAIN_MESSAGE, PERSONA, null, "Dinero"));
                 Jugador jugador1 = new Jugador(nombre, dinero);
 
+
                 nombre = (String) JOptionPane.showInputDialog(null, "Ingresa el nombre del segundo jugador", "Jugador 2", JOptionPane.PLAIN_MESSAGE, PERSONA, null, "Nombre");
                 dinero = Integer.parseInt((String) JOptionPane.showInputDialog(null, "Ingresa el dinero total del segundo jugador", "Jugador 2", JOptionPane.PLAIN_MESSAGE, PERSONA, null, "Dinero"));
                 Jugador jugador2 = new Jugador(nombre, dinero);
@@ -114,3 +115,4 @@ public class AppGuayabita {
         return false;
     }
 }
+

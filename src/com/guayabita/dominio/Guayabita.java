@@ -26,14 +26,15 @@ public class Guayabita {
                 
                 """;
     }
-
     public Guayabita(int caceMinimo) {
         this.pote = 0;
         this.caceMinimo = caceMinimo;
     }
-
+    public boolean dineroSobranteApostar(Jugador jugador1,Jugador jugador2){
+        return jugador1.getDinerro()-caceMinimo > 0 && jugador2.getDinerro()-caceMinimo > 0;
+    }
     public boolean iniciarJuego(Jugador jugador1, Jugador jugador2){
-        if((jugador1.getDinerro() >= caceMinimo && jugador2.getDinerro() >= caceMinimo) && (jugador1.getDinerro()-caceMinimo > 0 && jugador2.getDinerro()-caceMinimo > 0)){
+        if((jugador1.getDinerro() >= caceMinimo && jugador2.getDinerro() >= caceMinimo) && dineroSobranteApostar(jugador1, jugador2)){
 
             jugador1.setDinerro(jugador1.getDinerro() - caceMinimo);
             jugador2.setDinerro(jugador2.getDinerro() - caceMinimo);
