@@ -1,4 +1,4 @@
-package com.Poligonos.dominio;
+package com.FigurasGeometricas.dominio;
 
 public class Circulo extends FiguraGeometrica {
     private int radio;

@@ -1,26 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc131130-bf53-43b1-b223-13a4c7544095" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/com/guayabita/guayaba.mdj" afterDir="false" />
+    <list default="true" id="dc131130-bf53-43b1-b223-13a4c7544095" name="Changes" comment="Guayabita">
+      <change afterPath="$PROJECT_DIR$/src/com/FigurasGeometricas/dominio/TrianguloEquilatero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/guayabita/GuayabitaUML.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Poligonos/App/AppPoligono.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/FigurasGeometricas/App/AppFiguraGeometrica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Poligonos/dominio/Circulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/FigurasGeometricas/dominio/Circulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Poligonos/dominio/Cuadrado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/FigurasGeometricas/dominio/Cuadrado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Poligonos/dominio/FiguraGeometrica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/FigurasGeometricas/dominio/FiguraGeometrica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Poligonos/dominio/Triangulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/FigurasGeometricas/dominio/Triangulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/guayabita/App/AppGuayabita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guayabita/App/AppGuayabita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/guayabita/dominio/Guayabita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guayabita/dominio/Guayabita.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FpLMD7ziiMBabiZJGTt6rdKs7c" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true"
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Guayabita">
     <configuration name="AppAgenda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.agenda.App.AppAgenda" />
@@ -52,7 +78,30 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Guayabita">
+      <created>1665182333675</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665182333675</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Guayabita">
+      <created>1665182493109</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665182493109</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc131130-bf53-43b1-b223-13a4c7544095" name="Changes" comment="Guayabita" />
+      <created>1665184037223</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665184037223</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -68,5 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Guayabita" />
+    <option name="LAST_COMMIT_MESSAGE" value="Guayabita" />
   </component>
 </project>

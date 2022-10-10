@@ -18,6 +18,7 @@ public class AppGuayabita {
     private static final ImageIcon DADO_5 = new ImageIcon(Objects.requireNonNull(AppGuayabita.class.getResource("dado5.png")));
     private static final ImageIcon DADO_6 = new ImageIcon(Objects.requireNonNull(AppGuayabita.class.getResource("dado6.png")));
     static List<ImageIcon> dados = Arrays.asList(DADO_1, DADO_2, DADO_3, DADO_4, DADO_5, DADO_6);
+    private static boolean rendirse = false;
 
     public static void main(String[] args) {
         int eleccion = 0,pote,dinero;
@@ -53,15 +54,18 @@ public class AppGuayabita {
 
                         if (!jugarYGanar(jugador1, juegoGuayabita)) {
 
+                            if(rendirse)
+                                break;
                             mostrarMensaje("Turno de " + jugador2.getNombre(), ICONO);
                             jugarYGanar(jugador2, juegoGuayabita);
+                            if(rendirse)
+                                break;
 
                         }
                 }
                 JOptionPane.showMessageDialog(null, "El juego acabó");
                 mostrarMensaje("El dinero restante de " + jugador1.getNombre() + " es " + jugador1.getDinerro(), ICONO);
                 mostrarMensaje("El dinero restante de " + jugador2.getNombre() + " es " + jugador2.getDinerro(), ICONO);
-
             }
         }
 
@@ -70,7 +74,7 @@ public class AppGuayabita {
         JOptionPane.showMessageDialog(null,  mensaje, "Guayabita", JOptionPane.PLAIN_MESSAGE, icon);
     }
     public static int mostrarDado(ImageIcon icon,Jugador jugador, Guayabita juego){
-        return JOptionPane.showConfirmDialog(null, jugador.getNombre()+", ¿quieres apostar? (El pote actual es de "+juego.getPote()+"$)", "", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE, icon);
+        return JOptionPane.showConfirmDialog(null, jugador.getNombre()+",este es tu dado, ¿quieres apostar? (El pote actual es de "+juego.getPote()+"$)", "", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE, icon);
     }
     public static boolean jugarYGanar(Jugador jugador, Guayabita juegoGuayabita) {
 
@@ -111,6 +115,8 @@ public class AppGuayabita {
 
                 }
             }
+        }else{
+            rendirse = true;
         }
         return false;
     }

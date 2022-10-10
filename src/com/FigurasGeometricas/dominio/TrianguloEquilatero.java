@@ -1,10 +1,8 @@
-package com.Poligonos.dominio;
+package com.FigurasGeometricas.dominio;
 
-public class Triangulo extends FiguraGeometrica {
+public class TrianguloEquilatero extends Triangulo{
     private float base;
     private float altura;
-
-
 
     @Override
     public float area() {
@@ -14,5 +12,10 @@ public class Triangulo extends FiguraGeometrica {
     @Override
     public float perimetro() {
         return 3*base;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }
