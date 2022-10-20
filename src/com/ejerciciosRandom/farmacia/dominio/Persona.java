@@ -6,11 +6,19 @@ import java.util.List;
 public class Persona {
     private int dinero;
     private String nombre;
+    private final long cedula;
+    private String ocupacion;
     List<Farmaco> compras = new ArrayList<>();
 
-
-    public Persona(String nombre) {
+    public Persona(int dinero, String nombre, long cedula, String ocupacion) {
+        this.dinero = dinero;
         this.nombre = nombre;
+        this.cedula = cedula;
+        this.ocupacion = ocupacion;
+    }
+
+    public String getOcupacion() {
+        return ocupacion;
     }
 
     public int getDinero() {
@@ -29,5 +37,8 @@ public class Persona {
         this.nombre = nombre;
     }
 
+    public long getCedula() {
+        return cedula;
+    }
 
 }

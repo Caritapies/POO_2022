@@ -56,8 +56,10 @@ public class AppGuayabita {
 
                             if(rendirse)
                                 break;
+
                             mostrarMensaje("Turno de " + jugador2.getNombre(), ICONO);
                             jugarYGanar(jugador2, juegoGuayabita);
+
                             if(rendirse)
                                 break;
 
@@ -103,6 +105,7 @@ public class AppGuayabita {
                             if (tiro2 > tiro1) {
                                 juegoGuayabita.ganar(jugador,apuesta);
                                 mostrarMensaje("Has ganado la apuesta!", PERSONA);
+
                                 return true;
 
                             } else {
