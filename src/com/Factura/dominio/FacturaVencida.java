@@ -8,17 +8,16 @@ import java.time.LocalDateTime;
 import static java.time.temporal.ChronoUnit.DAYS;
 
 public class FacturaVencida extends Factura{
+    private int diasVencidos;
     private static final int VALOR_POR_DIA_VENCIDO = 1000;
-    private final LocalDate fechaVencida;
-    public FacturaVencida(double valor, Persona persona,int dia, int mes, int año) {
+
+    public FacturaVencida(double valor, Persona persona,int diasVencidos) {
         super(valor, persona);
-        fechaVencida = LocalDate.of(año,mes,dia);
+        this.diasVencidos = diasVencidos;
     }
     @Override
     public double calcularTotal() {
-        return Double.parseDouble(String.valueOf(valor + (long) diasVencidos()*VALOR_POR_DIA_VENCIDO));
+        return Double.parseDouble(String.valueOf(valor + (long) diasVencidos*VALOR_POR_DIA_VENCIDO));
     }
-    public int diasVencidos() {
-        return (int) DAYS.between(fechaVencida,fecha);
-    }
+
 }

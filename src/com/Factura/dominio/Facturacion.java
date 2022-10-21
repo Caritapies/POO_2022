@@ -2,9 +2,12 @@ package com.Factura.dominio;
 
 import com.ejerciciosRandom.farmacia.dominio.Persona;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import static java.time.temporal.ChronoUnit.DAYS;
 
 public class Facturacion {
     private static final double IVA_19 = 0.19;
@@ -14,11 +17,11 @@ public class Facturacion {
         this.facturas = new ArrayList<>();
     }
 
-    public void crearFactura(Persona persona, long valor) {
+    public void crearFactura(Persona persona, double valor, LocalDate fecha) {
         Factura factura = null;
 
-        if (persona.getNombre().toUpperCase().startsWith("A")) {
-            factura = new FacturaSinIva(valor, persona);
+        if(diasVencidos(fecha,LocalDate.now()) != 0 ){
+            factura = new FacturaVencida(valor, persona,diasVencidos(fecha,LocalDate.now()));
         } else if (!(persona.getOcupacion().equalsIgnoreCase("desempleado"))){
             factura = new FacturaConDescuento(valor, persona);
         }
@@ -27,9 +30,8 @@ public class Facturacion {
         }
         this.facturas.add(factura);
     }
-    public void crearFacturaVencida(Persona persona, long valor, int dia, int mes, int año){
-        Factura factura = new FacturaVencida(valor,persona,dia,mes,año);
-        this.facturas.add(factura);
+    public static int diasVencidos(LocalDate fechaVencida, LocalDate fecha) {
+        return (int) DAYS.between(fechaVencida,fecha);
     }
 
 

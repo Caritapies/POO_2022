@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc131130-bf53-43b1-b223-13a4c7544095" name="Changes" comment="Guayabita">
-      <change afterPath="$PROJECT_DIR$/src/com/Factura/App/AppFacturacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Factura/dominio/Factura.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaConDescuento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaConIVA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaSinIva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaVencida.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Factura/dominio/Facturacion.java" afterDir="false" />
+    <list default="true" id="dc131130-bf53-43b1-b223-13a4c7544095" name="Changes" comment="pedro el escamoso">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Factura/App/AppFacturacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Factura/App/AppFacturacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaVencida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaVencida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Factura/dominio/Facturacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Factura/dominio/Facturacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ejerciciosRandom/farmacia/dominio/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ejerciciosRandom/farmacia/dominio/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/guayabita/App/AppGuayabita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/guayabita/App/AppGuayabita.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,9 +78,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.AppAgenda" />
-      <item itemvalue="Application.AppFacturacion" />
       <item itemvalue="Application.Guayabita" />
+      <item itemvalue="Application.AppFacturacion" />
+      <item itemvalue="Application.AppAgenda" />
     </list>
     <recent_temporary>
       <list>
@@ -124,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665443638945</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="pedro el escamoso">
+      <created>1666279008123</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666279008123</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +143,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Guayabita" />
-    <option name="LAST_COMMIT_MESSAGE" value="Guayabita" />
+    <MESSAGE value="pedro el escamoso" />
+    <option name="LAST_COMMIT_MESSAGE" value="pedro el escamoso" />
   </component>
 </project>

@@ -6,7 +6,7 @@ import java.util.List;
 public class Persona {
     private int dinero;
     private String nombre;
-    private final long cedula;
+    private long cedula;
     private String ocupacion;
     List<Farmaco> compras = new ArrayList<>();
 
@@ -15,6 +15,10 @@ public class Persona {
         this.nombre = nombre;
         this.cedula = cedula;
         this.ocupacion = ocupacion;
+    }
+
+    public Persona(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getOcupacion() {
