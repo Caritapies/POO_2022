@@ -15,11 +15,11 @@ public class AppFacturacion {
         Facturacion sistemaFac = new Facturacion();
         byte eleccion;
         String nombre, ocupacion;
-        List<String> opcionCrearInfoValor = Arrays.asList("Crear Factura", "Info Facturas", "Valor total Facutras");
+        List<String> opciones = Arrays.asList("Crear Factura", "Info Facturas", "Valor total Facturas");
 
         boolean facturando = true;
         while (facturando){
-            eleccion = (byte) JOptionPane.showOptionDialog(null, "Sistema de facturacion", "Sistema de Facturacion", JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE, null, opcionCrearInfoValor.toArray(),"Crear Factura");
+            eleccion = (byte) JOptionPane.showOptionDialog(null, "Sistema de facturacion", "Sistema de Facturacion", JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE, null, opciones.toArray(),"Crear Factura");
             switch (eleccion) {
                 case JOptionPane.CLOSED_OPTION -> facturando = false;
                 case CREAR_FACTURA -> {
