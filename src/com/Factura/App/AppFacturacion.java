@@ -25,15 +25,15 @@ public class AppFacturacion {
                 case CREAR_FACTURA -> {
 
                     nombre = (String) JOptionPane.showInputDialog(null, "¿A nombre de quién va la factura?", "Ingreso de datos", JOptionPane.ERROR_MESSAGE, null, null, "Nombre");
-                    ocupacion = (String) JOptionPane.showInputDialog(null, "Ingrese la ocupación de "+nombre+" \n(Si es ninguna ingrese desempleado)", "Ingreso de datos", JOptionPane.YES_NO_OPTION, null, null, "Ocupacion");
+                    ocupacion = (String) JOptionPane.showInputDialog(null, "Ingrese la ocupación de "+nombre+" \n(Si es ninguna ingrese desempleado)", "Ingreso de datos", JOptionPane.INFORMATION_MESSAGE, null, null, "Ocupacion");
                     Persona persona = new Persona(nombre, ocupacion);
 
                     double valor = Double.parseDouble((String) JOptionPane.showInputDialog(null, "Ingrese el valor de la factura", "Ingreso de datos", JOptionPane.ERROR_MESSAGE, null, null, 0));
                     JOptionPane.showMessageDialog(null, "Ingrese la fecha");
 
-                    int año = Integer.parseInt((String) JOptionPane.showInputDialog(null, "Ingrese el año", "fecha", JOptionPane.ERROR_MESSAGE, null, null, 0));
-                    int mes = Integer.parseInt((String) JOptionPane.showInputDialog(null, "Ingrese el mes", "fecha", JOptionPane.ERROR_MESSAGE, null, null, 0));
-                    int dia = Integer.parseInt((String) JOptionPane.showInputDialog(null, "Ingrese el dia", "fecha", JOptionPane.ERROR_MESSAGE, null, null, 0));
+                    int año = Integer.parseInt((String) JOptionPane.showInputDialog(null, "Ingrese el año", "fecha", JOptionPane.INFORMATION_MESSAGE, null, null, 0));
+                    int mes = Integer.parseInt((String) JOptionPane.showInputDialog(null, "Ingrese el mes", "fecha", JOptionPane.INFORMATION_MESSAGE, null, null, 0));
+                    int dia = Integer.parseInt((String) JOptionPane.showInputDialog(null, "Ingrese el dia", "fecha", JOptionPane.INFORMATION_MESSAGE, null, null, 0));
 
                     LocalDate fecha = LocalDate.of(año, mes, dia);
                     sistemaFac.crearFactura(persona, valor, fecha);
