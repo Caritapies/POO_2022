@@ -1,13 +1,9 @@
 package com.Factura.App;
 
-import com.Factura.dominio.Factura;
-import com.Factura.dominio.FacturaVencida;
 import com.Factura.dominio.Facturacion;
 import com.ejerciciosRandom.farmacia.dominio.Persona;
-
 import javax.swing.*;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
 
@@ -38,6 +34,7 @@ public class AppFacturacion {
                     int año = Integer.parseInt((String) JOptionPane.showInputDialog(null, "Ingrese el año", "fecha", JOptionPane.ERROR_MESSAGE, null, null, 0));
                     int mes = Integer.parseInt((String) JOptionPane.showInputDialog(null, "Ingrese el mes", "fecha", JOptionPane.ERROR_MESSAGE, null, null, 0));
                     int dia = Integer.parseInt((String) JOptionPane.showInputDialog(null, "Ingrese el dia", "fecha", JOptionPane.ERROR_MESSAGE, null, null, 0));
+
                     LocalDate fecha = LocalDate.of(año, mes, dia);
                     sistemaFac.crearFactura(persona, valor, fecha);
                 }
