@@ -24,11 +24,11 @@ public class AppFacturacion {
                 case JOptionPane.CLOSED_OPTION -> facturando = false;
                 case CREAR_FACTURA -> {
 
-                    nombre = (String) JOptionPane.showInputDialog(null, "¿A nombre de quién va la factura?", "Ingreso de datos", JOptionPane.ERROR_MESSAGE, null, null, "Nombre");
-                    ocupacion = (String) JOptionPane.showInputDialog(null, "Ingrese la ocupación de "+nombre+" \n(Si es ninguna ingrese desempleado)", "Ingreso de datos", JOptionPane.INFORMATION_MESSAGE, null, null, "Ocupacion");
+                    nombre = (String) JOptionPane.showInputDialog(null, "¿A nombre de quién va la factura?", "Ingreso de datos", JOptionPane.INFORMATION_MESSAGE, null, null, "Nombre");
+                    ocupacion = (String) JOptionPane.showInputDialog(null, "Ingrese la ocupación de "+nombre+"\n Estudiante, Trabajador, Independiente \n(Si no es ninguna de estas ingrese ninguna)", "Ingreso de datos", JOptionPane.INFORMATION_MESSAGE, null, null, "Ocupacion");
                     Persona persona = new Persona(nombre, ocupacion);
 
-                    double valor = Double.parseDouble((String) JOptionPane.showInputDialog(null, "Ingrese el valor de la factura", "Ingreso de datos", JOptionPane.ERROR_MESSAGE, null, null, 0));
+                    double valor = Double.parseDouble((String) JOptionPane.showInputDialog(null, "Ingrese el valor de la factura", "Ingreso de datos", JOptionPane.INFORMATION_MESSAGE, null, null, 0));
                     JOptionPane.showMessageDialog(null, "Ingrese la fecha");
 
                     int año = Integer.parseInt((String) JOptionPane.showInputDialog(null, "Ingrese el año", "fecha", JOptionPane.INFORMATION_MESSAGE, null, null, 0));

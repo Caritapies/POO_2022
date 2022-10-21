@@ -14,11 +14,11 @@ public class FacturaConDescuento extends Factura {
     @Override
     public double calcularTotal() {
         if (persona.getOcupacion().equalsIgnoreCase("estudiante")) {
-            return super.valor - (valor * DESCUENTO_ESTUDIANTE);
+            return Math.round(super.valor - (valor * DESCUENTO_ESTUDIANTE));
         }else if(persona.getOcupacion().equalsIgnoreCase("trabajador")){
-            return super.valor - (valor * DESCUENTO_TRABAJADOR);
-        }else if(persona.getOcupacion().equalsIgnoreCase("independente")){
-            return super.valor - (valor * DESCUENTO_INDEPENDIENTE);
+            return Math.round(super.valor - (valor * DESCUENTO_TRABAJADOR));
+        }else if(persona.getOcupacion().equalsIgnoreCase("independiente")){
+            return Math.round(super.valor - (valor * DESCUENTO_INDEPENDIENTE));
         }
         return super.valor;
     }

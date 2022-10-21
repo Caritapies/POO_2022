@@ -10,11 +10,10 @@ public class Persona {
     private String ocupacion;
     List<Farmaco> compras = new ArrayList<>();
 
-    public Persona(int dinero, String nombre, long cedula, String ocupacion) {
+    public Persona(int dinero, String nombre, long cedula) {
         this.dinero = dinero;
         this.nombre = nombre;
         this.cedula = cedula;
-        this.ocupacion = ocupacion;
     }
 
     public Persona(String nombre, String ocupacion) {

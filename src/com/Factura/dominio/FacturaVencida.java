@@ -2,11 +2,6 @@ package com.Factura.dominio;
 
 import com.ejerciciosRandom.farmacia.dominio.Persona;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-
-import static java.time.temporal.ChronoUnit.DAYS;
-
 public class FacturaVencida extends Factura{
     private int diasVencidos;
     private static final int VALOR_POR_DIA_VENCIDO = 1000;

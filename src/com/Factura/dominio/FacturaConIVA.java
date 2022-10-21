@@ -12,7 +12,7 @@ public class FacturaConIVA extends Factura {
 
     @Override
     public double calcularTotal() {
-        return super.valor + this.calcularIva();
+        return Math.round(super.valor + this.calcularIva());
     }
 
     public double calcularIva() {

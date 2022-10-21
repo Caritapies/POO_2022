@@ -44,7 +44,7 @@ public class Facturacion {
         }).collect(Collectors.toList());
     }
     public boolean validarDescuento(Persona persona) {
-        return persona.getOcupacion().equalsIgnoreCase("estudiante") || persona.getNombre().equalsIgnoreCase("trabajador") || persona.getNombre().equalsIgnoreCase("independente");
+        return persona.getOcupacion().equalsIgnoreCase("estudiante") || persona.getOcupacion().equalsIgnoreCase("trabajador") || persona.getOcupacion().equalsIgnoreCase("independiente");
     }
 
     public double obtenerTotalFacturas() {

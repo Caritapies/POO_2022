@@ -4,6 +4,9 @@
     <list default="true" id="dc131130-bf53-43b1-b223-13a4c7544095" name="Changes" comment="Facturas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Factura/App/AppFacturacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Factura/App/AppFacturacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaConDescuento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaConDescuento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaConIVA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaConIVA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaVencida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaVencida.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Factura/dominio/Facturacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Factura/dominio/Facturacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ejerciciosRandom/farmacia/dominio/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ejerciciosRandom/farmacia/dominio/Persona.java" afterDir="false" />
     </list>
@@ -132,7 +135,35 @@
       <option name="project" value="LOCAL" />
       <updated>1666313742670</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Facturas">
+      <created>1666324899350</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666324899350</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Facturas">
+      <created>1666324963057</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666324963057</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Facturas">
+      <created>1666325042929</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666325042929</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Facturas">
+      <created>1666325248118</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666325248118</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
