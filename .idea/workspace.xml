@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc131130-bf53-43b1-b223-13a4c7544095" name="Changes" comment="pedro el escamoso">
+    <list default="true" id="dc131130-bf53-43b1-b223-13a4c7544095" name="Changes" comment="Facturas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Factura/App/AppFacturacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Factura/App/AppFacturacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaVencida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaVencida.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Factura/dominio/Facturacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Factura/dominio/Facturacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ejerciciosRandom/farmacia/dominio/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ejerciciosRandom/farmacia/dominio/Persona.java" afterDir="false" />
     </list>
@@ -126,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666279008123</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Facturas">
+      <created>1666313742670</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666313742670</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +150,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Guayabita" />
     <MESSAGE value="pedro el escamoso" />
-    <option name="LAST_COMMIT_MESSAGE" value="pedro el escamoso" />
+    <MESSAGE value="Facturas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Facturas" />
   </component>
 </project>

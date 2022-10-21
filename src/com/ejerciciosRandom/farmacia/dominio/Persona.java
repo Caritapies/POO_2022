@@ -17,8 +17,9 @@ public class Persona {
         this.ocupacion = ocupacion;
     }
 
-    public Persona(String nombre) {
+    public Persona(String nombre, String ocupacion) {
         this.nombre = nombre;
+        this.ocupacion = ocupacion;
     }
 
     public String getOcupacion() {

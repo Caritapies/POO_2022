@@ -20,15 +20,18 @@ public class Facturacion {
     public void crearFactura(Persona persona, double valor, LocalDate fecha) {
         Factura factura = null;
 
-        if(diasVencidos(fecha,LocalDate.now()) != 0 ){
+        if(diasVencidos(fecha,LocalDate.now()) > 0 ){
             factura = new FacturaVencida(valor, persona,diasVencidos(fecha,LocalDate.now()));
-        } else if (!(persona.getOcupacion().equalsIgnoreCase("desempleado"))){
+        }
+        else if (validarDescuento(persona)){
             factura = new FacturaConDescuento(valor, persona);
         }
         else {
             factura = new FacturaConIVA(valor, persona, IVA_19);
         }
         this.facturas.add(factura);
+
+
     }
     public static int diasVencidos(LocalDate fechaVencida, LocalDate fecha) {
         return (int) DAYS.between(fechaVencida,fecha);
@@ -39,6 +42,9 @@ public class Facturacion {
         return this.facturas.stream().map(fac -> {
             return "Factura #" + fac.numero + " a nombre de " + fac.persona.getNombre() + " - $" + fac.calcularTotal() + "\n";
         }).collect(Collectors.toList());
+    }
+    public boolean validarDescuento(Persona persona) {
+        return persona.getOcupacion().equalsIgnoreCase("estudiante") || persona.getNombre().equalsIgnoreCase("trabajador") || persona.getNombre().equalsIgnoreCase("independente");
     }
 
     public double obtenerTotalFacturas() {
