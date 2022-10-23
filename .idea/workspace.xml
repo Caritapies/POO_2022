@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc131130-bf53-43b1-b223-13a4c7544095" name="Changes" comment="Facturas">
+      <change afterPath="$PROJECT_DIR$/src/com/Nomina/App/AppNomina.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Directo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Empleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Freelance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Nomina.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Vendedor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Factura/App/AppFacturacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Factura/App/AppFacturacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaConDescuento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaConDescuento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaConIVA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaConIVA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaVencida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Factura/dominio/FacturaVencida.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Factura/dominio/Facturacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Factura/dominio/Facturacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ejerciciosRandom/farmacia/dominio/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ejerciciosRandom/farmacia/dominio/Persona.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.AppFacturacion">
+  <component name="RunManager" selected="Application.AppNomina">
     <configuration name="AppAgenda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.agenda.App.AppAgenda" />
       <module name="POO_2022" />
@@ -72,6 +72,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppNomina" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Nomina.App.AppNomina" />
+      <module name="POO_2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Nomina.App.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Guayabita" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.guayabita.App.AppGuayabita" />
       <module name="POO_2022" />
@@ -81,11 +94,13 @@
     </configuration>
     <list>
       <item itemvalue="Application.Guayabita" />
+      <item itemvalue="Application.AppNomina" />
       <item itemvalue="Application.AppFacturacion" />
       <item itemvalue="Application.AppAgenda" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppNomina" />
         <item itemvalue="Application.AppFacturacion" />
         <item itemvalue="Application.AppAgenda" />
       </list>
@@ -163,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666325248118</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Facturas">
+      <created>1666326541976</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666326541976</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
