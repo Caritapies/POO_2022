@@ -30,6 +30,16 @@ public class Nomina {
         return directos;
 
     }
+    public List<Promotor> listarPromotores(){
+        List<Promotor> promotores = new ArrayList<>();
+        for (Empleado empleado: empleados){
+            if(empleado instanceof Promotor){
+                promotores.add((Promotor) empleado);
+            }
+        }
+        return promotores;
+
+    }
     public List<Freelance> listarFreelancer(){
         List<Freelance> freelancers = new ArrayList<>();
         for (Empleado empleado: empleados){

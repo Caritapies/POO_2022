@@ -25,7 +25,7 @@ public class Directo extends Empleado{
 
     @Override
     public String toString() {
-        return getNombre()+" empleado directo gana "+calcularSalario();
+        return getNombre()+" empleado directo gana "+calcularSalario()+"\n";
     }
 
     public long getSalario() {

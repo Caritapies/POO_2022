@@ -16,7 +16,7 @@ public class Freelance extends Empleado{
     }
     @Override
     public String toString() {
-        return getNombre()+" empleado freelance gana "+calcularSalario();
+        return getNombre()+" empleado freelance gana "+calcularSalario()+"\n";
     }
 
 

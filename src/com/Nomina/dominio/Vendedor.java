@@ -16,7 +16,7 @@ public class Vendedor extends Directo{
     }
     @Override
     public String toString() {
-        return getNombre()+" vendedor gana "+calcularSalario();
+        return getNombre()+" vendedor gana "+calcularSalario()+"\n";
     }
 
     public long calcularComision() {

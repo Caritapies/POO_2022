@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc131130-bf53-43b1-b223-13a4c7544095" name="Changes" comment="Facturas">
-      <change afterPath="$PROJECT_DIR$/src/com/Nomina/App/AppNomina.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Directo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Empleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Freelance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Nomina.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Vendedor.java" afterDir="false" />
+    <list default="true" id="dc131130-bf53-43b1-b223-13a4c7544095" name="Changes" comment="Nomina">
+      <change afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Promotor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Nomina/App/AppNomina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Nomina/App/AppNomina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Nomina/dominio/Directo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Directo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Nomina/dominio/Freelance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Freelance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Nomina/dominio/Nomina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Nomina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Nomina/dominio/Vendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Vendedor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666326541976</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Nomina">
+      <created>1666536996266</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666536996266</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,6 +211,7 @@
     <MESSAGE value="Guayabita" />
     <MESSAGE value="pedro el escamoso" />
     <MESSAGE value="Facturas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Facturas" />
+    <MESSAGE value="Nomina" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nomina" />
   </component>
 </project>
