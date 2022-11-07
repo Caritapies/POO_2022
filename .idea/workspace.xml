@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc131130-bf53-43b1-b223-13a4c7544095" name="Changes" comment="Nomina">
-      <change afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Promotor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/documento/dominio/Antivirus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/documento/dominio/Archivo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/documento/dominio/Documento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/documento/dominio/DocumentoPDF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/documento/dominio/DocumentoWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/documento/dominio/Video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/documento/dominio/Virus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/documento/dominio/Viruseable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Nomina/App/AppNomina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Nomina/App/AppNomina.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Nomina/dominio/Directo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Directo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Nomina/dominio/Freelance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Freelance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Nomina/dominio/Nomina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Nomina.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Nomina/dominio/Vendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Nomina/dominio/Vendedor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -37,14 +40,15 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/User/Desktop/Uni/4 Cuarto/POO/POO_2022",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.AppNomina">
     <configuration name="AppAgenda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.agenda.App.AppAgenda" />
@@ -192,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666536996266</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Nomina">
+      <created>1666655516256</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666655516256</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
