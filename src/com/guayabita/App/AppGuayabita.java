@@ -22,7 +22,7 @@ public class AppGuayabita {
 
     public static void main(String[] args) {
         int eleccion = 0,pote,dinero;
-        String nombre;
+        String nombre, hola;
 
         while(eleccion != JOptionPane.CLOSED_OPTION){
 
