@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc131130-bf53-43b1-b223-13a4c7544095" name="Changes" comment="Nomina">
-      <change afterPath="$PROJECT_DIR$/src/com/documento/dominio/Antivirus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/documento/dominio/Archivo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/documento/dominio/Documento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/documento/dominio/DocumentoPDF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/documento/dominio/DocumentoWord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/documento/dominio/Video.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/documento/dominio/Virus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/documento/dominio/Viruseable.java" afterDir="false" />
+    <list default="true" id="dc131130-bf53-43b1-b223-13a4c7544095" name="Changes" comment="Archivos">
+      <change afterPath="$PROJECT_DIR$/src/com/oftamologia/dominio/Oftalmologo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/oftamologia/dominio/Operable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/oftamologia/dominio/Paciente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/oftamologia/dominio/PacienteApto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/oftamologia/dominio/PacienteNoApto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +42,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/User/Desktop/Uni/4 Cuarto/POO/POO_2022",
+    "last_opened_file_path": "C:/POO/POO-Profesor",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -203,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666655516256</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="hola">
+      <created>1667833831238</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667833831238</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Archivos">
+      <created>1667833932168</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667833932168</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +234,8 @@
     <MESSAGE value="pedro el escamoso" />
     <MESSAGE value="Facturas" />
     <MESSAGE value="Nomina" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nomina" />
+    <MESSAGE value="hola" />
+    <MESSAGE value="Archivos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Archivos" />
   </component>
 </project>
