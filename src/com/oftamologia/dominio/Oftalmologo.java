@@ -2,7 +2,7 @@ package com.oftamologia.dominio;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
+
 
 public class Oftalmologo {
     private String nombre;
@@ -10,6 +10,7 @@ public class Oftalmologo {
 
     public Oftalmologo(String nombre) {
         this.nombre = nombre;
+        pacientes = new ArrayList<>();
     }
     public String getNombre() {
         return nombre;
@@ -19,9 +20,12 @@ public class Oftalmologo {
         if(edad <= 40 && nombre.toLowerCase().startsWith("a")){
             paciente = new PacienteApto(nombre, edad, true);
         }else{
-            new PacienteNoApto(nombre, edad, false);
+            paciente = new PacienteNoApto(nombre, edad, false);
         }
         return paciente;
+    }
+    public void agregarPaciente(Paciente paciente){
+        this.pacientes.add(paciente);
     }
     public void operarPaciente(){
         pacientes.forEach(paciente ->{
@@ -38,5 +42,8 @@ public class Oftalmologo {
             }
         });
         return pacientesAptos;
+    }
+    public void agregarALista(Paciente paciente){
+        pacientes.add(paciente);
     }
 }

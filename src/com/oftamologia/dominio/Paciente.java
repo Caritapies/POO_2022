@@ -9,4 +9,8 @@ public abstract class Paciente {
         this.edad = edad;
         this.necesitaCirugia = necesitaCirugia;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
 }
