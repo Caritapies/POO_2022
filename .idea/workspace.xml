@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc131130-bf53-43b1-b223-13a4c7544095" name="Changes" comment="Oftalmologo">
-      <change afterPath="$PROJECT_DIR$/src/com/oftamologia/app/AppOftalmologo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/AgenciaInmobiliaria/App/AppAgencia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/AgenciaInmobiliaria/dominio/Agencia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/AgenciaInmobiliaria/dominio/Apartamento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/AgenciaInmobiliaria/dominio/Arrendable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/AgenciaInmobiliaria/dominio/Casa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/AgenciaInmobiliaria/dominio/Inmueble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/AgenciaInmobiliaria/dominio/Lote.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/documento/dominio/Virus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/documento/dominio/Virus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/oftamologia/dominio/Oftalmologo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/oftamologia/dominio/Oftalmologo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/oftamologia/dominio/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/oftamologia/dominio/Paciente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +48,20 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.AppOftalmologo">
+  <component name="RunManager" selected="Application.AppAgencia">
+    <configuration name="AppAgencia" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.AgenciaInmobiliaria.App.AppAgencia" />
+      <module name="POO_2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.AgenciaInmobiliaria.App.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AppAgenda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.agenda.App.AppAgenda" />
       <module name="POO_2022" />
@@ -107,6 +123,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.Guayabita" />
+      <item itemvalue="Application.AppAgencia" />
       <item itemvalue="Application.AppOftalmologo" />
       <item itemvalue="Application.AppNomina" />
       <item itemvalue="Application.AppFacturacion" />
@@ -114,6 +131,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppAgencia" />
         <item itemvalue="Application.AppOftalmologo" />
         <item itemvalue="Application.AppNomina" />
         <item itemvalue="Application.AppFacturacion" />
@@ -235,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667845051586</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Oftalmologo">
+      <created>1668135445044</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668135445045</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
